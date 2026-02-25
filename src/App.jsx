@@ -15,7 +15,7 @@ const menuCategories = [
     id: 'tacos',
     label: 'Tacos',
     Icon: UtensilsCrossed,
-    image: '/platos/tacos2.jpg',
+    image: '/tacos2.jpg',
     items: [
       { name: 'Carne Asada', desc: 'Street: Onion / Cilantro · Cali: Cheese / Lettuce / Pico / Crema', price: '$3.15 – $3.70', tag: null },
       { name: 'Chicken', desc: 'Street: Onion / Cilantro · Cali: Cheese / Lettuce / Pico / Crema', price: '$3.15 – $3.70', tag: null },
@@ -36,7 +36,7 @@ const menuCategories = [
     id: 'birria',
     label: 'Birria',
     Icon: Flame,
-    image: '/platos/490404078_1017092037066806_1858708385693310366_n.jpg',
+    image: '/birria.jpg',
     items: [
       { name: 'Quesobirrias', desc: 'Guajillo crisp tortilla / Cheese / Protein / Cilantro / Consomé', price: '$13.65', tag: 'Must Try' },
       { name: 'Quesorrito', desc: 'Guajillo crisp burrito / Rice / Beans / Cheese / Onion / Cilantro / Consomé', price: '$13.65', tag: null },
@@ -59,7 +59,7 @@ const menuCategories = [
     id: 'quesadillas',
     label: 'Quesadillas',
     Icon: ChefHat,
-    image: '/platos/541302026_1121227116653297_538723228785555570_n.jpg',
+    image: '/quesadilla.jpg',
     items: [
       { name: 'Street Quesadilla', desc: 'Protein / Cheese / Onion / Cilantro / Lettuce / Pico / Guac / Crema', price: '$11.55', tag: null },
       { name: 'Only Cheese', desc: 'Just the good stuff — add Protein +$5', price: '$6.30', tag: null },
@@ -71,7 +71,7 @@ const menuCategories = [
     id: 'burritos',
     label: 'Burritos',
     Icon: Sandwich,
-    image: '/platos/burrito.jpg',
+    image: '/burrito.jpg',
     items: [
       { name: 'Cali Burrito', desc: 'Protein / Rice / Beans / Cheese / Lettuce / Pico / Guac / Crema', price: '$10.50', tag: null },
       { name: 'OG California', desc: 'Rice / Beans / Steak / Fries / Pico / Guac / Crema', price: '$12.60', tag: 'Signature' },
@@ -84,7 +84,7 @@ const menuCategories = [
     id: 'bowls',
     label: 'Bowls',
     Icon: Salad,
-    image: '/platos/552910526_1138203494955659_6539149764488120952_n.jpg',
+    image: '/bowl.jpg',
     items: [
       { name: 'The Basic Bowl', desc: 'Protein / Rice / Queso', price: '$10.50', tag: null },
       { name: 'Cali Bowl', desc: 'Protein / Rice / Queso / Pico / Guac', price: '$12.60', tag: null },
@@ -96,7 +96,7 @@ const menuCategories = [
     id: 'fries',
     label: 'Fries',
     Icon: Layers,
-    image: '/platos/551131389_1134075008701841_643053751853788589_n.jpg',
+    image: '/fries.jpg',
     items: [
       { name: 'Carne Asada Fries', desc: 'Fries / Steak / Cheese / Pico / Crema / Guac', price: '$12.60', tag: null },
       { name: 'Surf N Turf Fries', desc: 'Fries / Steak / Shrimp / Chorizo / Cheese / Onion / Cilantro / Crema / Baja Sauce / Avocado Slices', price: '$13.65', tag: 'Signature' },
@@ -109,7 +109,7 @@ const menuCategories = [
     id: 'tortas',
     label: 'Tortas',
     Icon: Beef,
-    image: '/platos/Tacos or burritos.jpg',
+    image: '/torta.jpg',
     items: [
       { name: 'Cali Cheese Steak', desc: 'Telera Bread / Beans / Steak / Cheese / Fried Onion / Guac', price: '$12.00', tag: null },
       { name: 'Street Torta', desc: 'Telera Bread / Protein / Beans / Pico / Cheese / Guac / Lettuce / Crema', price: '$12.60', tag: null },
@@ -120,7 +120,7 @@ const menuCategories = [
     id: 'nachos',
     label: 'Nachos',
     Icon: Sparkles,
-    image: '/platos/561794658_1156754203100588_3253889954766667126_n.jpg',
+    image: '/nachos.jpg',
     items: [
       { name: 'Cali Nachos', desc: 'Protein / Rice / Beans / Queso / Pico / Crema', price: '$12.60', tag: null },
       { name: 'Jalisco Style', desc: 'Steak / Chicken / Chorizo upgrade', price: '+$2', tag: null },
@@ -130,7 +130,7 @@ const menuCategories = [
     id: 'sides',
     label: 'Sides',
     Icon: Star,
-    image: '/platos/desayuno.jpg',
+    image: '/sides.jpg',
     items: [
       { name: 'Rice', desc: 'Mexican-style seasoned rice', price: '$3.15', tag: null },
       { name: 'Beans', desc: 'Slow-simmered seasoned beans', price: '$3.15', tag: null },
