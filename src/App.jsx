@@ -580,6 +580,28 @@ function Reviews() {
   )
 }
 
+function GalleryImage({ src }) {
+  const [loaded, setLoaded] = useState(false)
+  const [error, setError] = useState(false)
+
+  if (error) return null
+
+  return (
+    <div className="break-inside-avoid mb-3 group relative overflow-hidden rounded-xl cursor-pointer bg-white/5">
+      {!loaded && (
+        <div className="w-full aspect-[4/3] rounded-xl bg-white/5 animate-pulse" />
+      )}
+      <img
+        src={src}
+        alt=""
+        className={`w-full block rounded-xl object-cover transition-transform duration-500 group-hover:scale-105 ${loaded ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}
+        onLoad={() => setLoaded(true)}
+        onError={() => setError(true)}
+      />
+    </div>
+  )
+}
+
 function FoodGallery() {
   return (
     <section id="galeria" className="bg-[#071414] py-24 px-4">
@@ -600,14 +622,7 @@ function FoodGallery() {
         {/* Masonry grid using CSS columns */}
         <div className="columns-2 md:columns-3 lg:columns-4 gap-3 [column-gap:12px]">
           {galleryPhotos.map((src, i) => (
-            <div key={i} className="break-inside-avoid mb-3 group relative overflow-hidden rounded-xl cursor-pointer">
-              <img
-                src={src}
-                alt=""
-                className="w-full block rounded-xl object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-            </div>
+            <GalleryImage key={i} src={src} />
           ))}
         </div>
       </div>
