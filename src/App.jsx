@@ -5,6 +5,7 @@ import {
   UtensilsCrossed, Sandwich, ChefHat, GlassWater, Trophy,
   Sparkles, Menu as MenuIcon, X, ExternalLink,
   Pizza, Salad, Layers,
+  Heart, Briefcase, GraduationCap, Cake, Users, Music2, Truck,
 } from 'lucide-react'
 import './App.css'
 
@@ -169,6 +170,7 @@ const stripPhotos = [
   '/platos/540840675_1121227129986629_7759649515608580244_n.jpg',
   '/platos/541429098_1121227086653300_7102855027501619045_n.jpg',
   '/platos/tacos.jpg',
+  '/platos/tacos3.jpg',
   '/platos/556288547_1142934761149199_4934172113736430976_n.jpg',
   '/platos/558847577_1148012900641385_3455552489018663095_n.jpg',
   '/platos/fish%20tacos.jpg',
@@ -187,6 +189,7 @@ const stripPhotos = [
 /* Gallery — masonry grid of real food photos */
 const galleryPhotos = [
   '/platos/tacos2.jpg',
+  '/platos/tacos3.jpg',
   '/platos/Pizza.jpg',
   '/platos/tacos.jpg',
   '/platos/fish%20tacos.jpg',
@@ -207,6 +210,53 @@ const galleryPhotos = [
   '/nachos.jpg',
 ]
 
+/* ─── Pizza Mondays ─── */
+const pizzas = [
+  {
+    name: 'Meat Lovers',
+    desc: 'Tomato Sauce · Mozzarella · Cheddar · Steak · Chorizo · Adobo Pork · Shrimp · Baja Sauce',
+    image: '/pizza/Meat%20lovers%20pizza%20tomatoe%20sauce%20%E2%80%A2%20mozzarella%20%E2%80%A2%20cheddar%20%E2%80%A2%20steak%20%E2%80%A2%20chorizo%20%E2%80%A2%20adobo%20pork%20%E2%80%A2%20shrimp%20%E2%80%A2%20baja%20sauce.jpg',
+    tag: 'Signature',
+    featured: true,
+  },
+  {
+    name: 'Carne Asada',
+    desc: null,
+    image: '/pizza/carne%20asada%20pizza.jpg',
+    tag: null,
+  },
+  {
+    name: 'Shrimp Oregano',
+    desc: null,
+    image: '/pizza/Shrimp%20oregano%20pizza.jpg',
+    tag: null,
+  },
+  {
+    name: null,
+    desc: null,
+    image: '/pizza/484374182_996585365784140_8967855717503481455_n.jpg',
+    tag: null,
+  },
+  {
+    name: null,
+    desc: null,
+    image: '/pizza/484853615_997480455694631_2703351910269601908_n.jpg',
+    tag: null,
+  },
+  {
+    name: null,
+    desc: null,
+    image: '/pizza/637468476_1248705243905483_3211869144838996399_n.jpg',
+    tag: 'Fan Fav',
+  },
+  {
+    name: null,
+    desc: null,
+    image: '/pizza/482085225_991087016333975_2755275291232579309_n%20(1).jpg',
+    tag: null,
+  },
+]
+
 /* ─────────────────────────────── COMPONENTS ───────────────────────────────── */
 
 function Navbar({ scrolled }) {
@@ -214,6 +264,8 @@ function Navbar({ scrolled }) {
 
   const links = [
     { href: '#menu',      label: 'Menú' },
+    { href: '#pizzas',    label: '🍕 $10 Pizza Mondays' },
+    { href: '#catering',  label: 'Catering' },
     { href: '#resenas',   label: 'Reseñas' },
     { href: '#galeria',   label: 'Galería' },
     { href: '#nosotros',  label: 'Nosotros' },
@@ -453,6 +505,130 @@ function Menu() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function PizzaMondays() {
+  return (
+    <section id="pizzas" className="bg-[#060F0F] py-24 px-4 overflow-hidden relative">
+      {/* Background accent glows */}
+      <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-[#F5C542]/5 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] rounded-full bg-[#3DBFBF]/8 blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto relative z-10">
+
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+          <div>
+            <div className="inline-flex items-center gap-2 bg-[#F5C542]/10 border border-[#F5C542]/25 rounded-full px-4 py-1.5 mb-5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#F5C542] animate-pulse" />
+              <p className="font-['Poppins'] text-[#F5C542] text-[11px] font-bold uppercase tracking-[0.3em]">Every Monday</p>
+            </div>
+            <div className="flex items-end gap-5 flex-wrap">
+              <h2 className="font-['Playfair_Display'] font-black text-white leading-none" style={{ fontSize: 'clamp(52px, 8vw, 100px)' }}>
+                Pizza<br /><span className="text-[#3DBFBF] italic">Mondays</span>
+              </h2>
+              <div className="mb-2 md:mb-4 flex flex-col items-start">
+                <div className="bg-[#F5C542] rounded-2xl px-5 py-2 shadow-2xl shadow-[#F5C542]/30 rotate-[-2deg]">
+                  <span className="font-['Playfair_Display'] font-black text-[#060F0F] leading-none" style={{ fontSize: 'clamp(36px, 5vw, 56px)' }}>$10</span>
+                </div>
+                <p className="font-['Poppins'] text-[#F5C542]/70 text-[10px] font-bold uppercase tracking-widest mt-1.5 ml-1">Every Monday</p>
+              </div>
+            </div>
+            <p className="font-['Poppins'] text-white/40 text-sm mt-4 max-w-sm">
+              Todas las pizzas. Cada lunes. <span className="text-[#F5C542] font-semibold">$10</span>.
+            </p>
+          </div>
+          <a
+            href="https://tacosmijalisco.cloveronline.com/menu/all"
+            target="_blank" rel="noopener noreferrer"
+            className="self-start md:self-end inline-flex items-center gap-2 bg-[#F5C542] hover:bg-[#f0bb30] text-[#060F0F] font-['Poppins'] font-bold text-sm px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-[#F5C542]/30 hover:-translate-y-0.5 whitespace-nowrap"
+          >
+            Ordenar ahora <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+
+        {/* Pizza Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+
+          {/* Featured card — Meat Lovers 2×2 */}
+          <div className="col-span-2 row-span-2 group relative rounded-2xl overflow-hidden cursor-pointer" style={{ aspectRatio: '1/1' }}>
+            <img
+              src={pizzas[0].image}
+              alt={pizzas[0].name}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              onError={(e) => { e.target.closest('div').style.display = 'none' }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#3DBFBF]/0 to-[#3DBFBF]/0 group-hover:to-[#3DBFBF]/15 transition-all duration-500" />
+            {/* Ring glow on hover */}
+            <div className="absolute inset-0 rounded-2xl ring-0 group-hover:ring-2 group-hover:ring-[#F5C542]/60 transition-all duration-300" />
+            <div className="absolute top-4 left-4">
+              <span className="bg-[#F5C542] text-[#060F0F] text-[10px] font-['Poppins'] font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">Signature</span>
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 p-5 md:p-8">
+              <h3 className="font-['Playfair_Display'] font-black text-white text-2xl md:text-4xl mb-1 md:mb-2 leading-tight">Meat Lovers</h3>
+              <p className="font-['Poppins'] text-white/55 text-xs md:text-sm leading-relaxed max-w-sm">
+                Steak · Chorizo · Adobo Pork · Shrimp<br className="hidden md:block" />
+                Mozzarella · Cheddar · Baja Sauce
+              </p>
+              <div className="flex items-center gap-2 mt-3 md:mt-4">
+                <span className="font-['Playfair_Display'] font-black text-[#F5C542] text-2xl md:text-3xl">$10</span>
+                <span className="font-['Poppins'] text-white/30 text-xs">· every monday</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Small cards */}
+          {pizzas.slice(1).map((pizza, i) => (
+            <div key={i} className="group relative rounded-2xl overflow-hidden cursor-pointer aspect-square">
+              <img
+                src={pizza.image}
+                alt={pizza.name}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                onError={(e) => { e.target.closest('div').style.display = 'none' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+              <div className="absolute inset-0 rounded-2xl ring-0 group-hover:ring-2 group-hover:ring-[#F5C542]/50 transition-all duration-300" />
+              {pizza.tag && (
+                <div className="absolute top-3 left-3">
+                  <span className="bg-[#3DBFBF] text-white text-[9px] font-['Poppins'] font-black uppercase tracking-wider px-2.5 py-1 rounded-full shadow">{pizza.tag}</span>
+                </div>
+              )}
+              {/* Ingredient reveal on hover — only if name or desc exists */}
+              {(pizza.name || pizza.desc) && (
+                <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                  {pizza.desc && <p className="font-['Poppins'] text-white/85 text-[11px] text-center leading-relaxed">{pizza.desc}</p>}
+                </div>
+              )}
+              <div className="absolute bottom-0 left-0 right-0 p-3 group-hover:opacity-0 transition-opacity duration-200">
+                {pizza.name && <h3 className="font-['Playfair_Display'] font-bold text-white text-base leading-tight">{pizza.name}</h3>}
+                <span className="font-['Playfair_Display'] font-black text-[#F5C542] text-sm">$10</span>
+              </div>
+            </div>
+          ))}
+
+          {/* CTA card */}
+          <div className="col-span-2 rounded-2xl border border-[#F5C542]/20 bg-[#F5C542]/5 flex flex-col md:flex-row items-center justify-between gap-4 p-6 md:p-8">
+            <div>
+              <p className="font-['Poppins'] text-[#F5C542] text-xs font-bold uppercase tracking-widest mb-2">$10 every monday</p>
+              <p className="font-['Playfair_Display'] text-white font-black text-xl md:text-2xl leading-snug">
+                El lunes es el mejor<br />
+                <span className="text-[#F5C542]">día de la semana.</span>
+              </p>
+            </div>
+            <a
+              href="https://tacosmijalisco.cloveronline.com/menu/all"
+              target="_blank" rel="noopener noreferrer"
+              className="flex-shrink-0 inline-flex items-center gap-2 bg-[#F5C542] hover:bg-[#f0bb30] text-[#060F0F] font-['Poppins'] font-bold text-sm px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-[#F5C542]/30"
+            >
+              Ordenar Pizza <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
@@ -799,6 +975,114 @@ function Location() {
   )
 }
 
+function Catering() {
+  const events = [
+    { Icon: Music2,       label: 'Quinceañeras' },
+    { Icon: Heart,        label: 'Bodas' },
+    { Icon: Briefcase,    label: 'Eventos Corporativos' },
+    { Icon: GraduationCap, label: 'Graduaciones' },
+    { Icon: Cake,         label: 'Cumpleaños' },
+    { Icon: Users,        label: 'Eventos Privados' },
+  ]
+
+  return (
+    <section id="catering" className="relative bg-[#050F0F] overflow-hidden">
+
+      {/* ── HERO STRIP ── */}
+      <div className="relative h-[60vh] min-h-[420px] max-h-[640px]">
+        <img
+          src="/foodtruck%20originall.jpg"
+          alt="Tacos Mi Jalisco Catering"
+          className="w-full h-full object-cover"
+        />
+        {/* Dark vignette */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-[#050F0F]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#050F0F]/80 via-transparent to-transparent" />
+
+        {/* Floating headline over image */}
+        <div className="absolute inset-0 flex items-center px-4">
+          <div className="max-w-7xl mx-auto w-full">
+            <div className="inline-flex items-center gap-2 bg-[#3DBFBF]/15 border border-[#3DBFBF]/30 rounded-full px-4 py-1.5 mb-5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#3DBFBF] animate-pulse" />
+              <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em]">Catering &amp; Eventos</p>
+            </div>
+            <h2 className="font-['Playfair_Display'] font-black text-white leading-[0.88]" style={{ fontSize: 'clamp(52px, 9vw, 110px)' }}>
+              We Come<br />
+              <span className="text-[#3DBFBF] italic">To You.</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      {/* ── CONTENT ── */}
+      <div className="px-4 pt-0 pb-28">
+        <div className="max-w-7xl mx-auto">
+
+          {/* Split row */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-16">
+
+            {/* Left — proposition */}
+            <div>
+              <p className="font-['Playfair_Display'] text-white/90 font-bold text-xl md:text-2xl leading-snug mb-6">
+                Tacos Mi Jalisco lleva el sabor de Jalisco directo a tu evento.
+                Auténtico, fresco, sin rodeos.
+              </p>
+              <p className="font-['Poppins'] text-white/40 text-sm leading-relaxed mb-8">
+                Desde quinceañeras hasta eventos corporativos — traemos el truck, el equipo y el menú completo.
+                Tú solo disfruta. Nosotros cocinamos.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="https://www.facebook.com/TacosMiJaliscoTruck"
+                  target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#3DBFBF] hover:bg-[#2EAEAE] text-white font-['Poppins'] font-bold text-sm px-7 py-3.5 rounded-xl transition-all duration-200 hover:shadow-2xl hover:shadow-[#3DBFBF]/30 hover:-translate-y-0.5"
+                >
+                  Contáctanos <ArrowRight className="w-4 h-4" />
+                </a>
+                <a
+                  href="tel:"
+                  className="inline-flex items-center justify-center gap-2 border border-white/15 hover:border-[#3DBFBF]/50 text-white/60 hover:text-[#3DBFBF] font-['Poppins'] font-medium text-sm px-7 py-3.5 rounded-xl transition-all duration-200"
+                >
+                  Llamar ahora
+                </a>
+              </div>
+            </div>
+
+            {/* Right — trust stats */}
+            <div className="grid grid-cols-2 gap-3">
+              {[
+                { val: '15+', label: 'Años de experiencia' },
+                { val: '100%', label: 'Ingredientes frescos' },
+                { val: '∞', label: 'Tacos por evento' },
+                { val: '1', label: 'Llamada para reservar' },
+              ].map(({ val, label }) => (
+                <div key={label} className="bg-white/4 border border-white/8 rounded-2xl p-6 flex flex-col gap-1">
+                  <span className="font-['Playfair_Display'] font-black text-[#3DBFBF]" style={{ fontSize: 'clamp(32px, 4vw, 44px)' }}>{val}</span>
+                  <span className="font-['Poppins'] text-white/45 text-xs leading-snug">{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Event types */}
+          <div>
+            <p className="font-['Poppins'] text-white/25 text-[10px] font-bold uppercase tracking-[0.4em] mb-5">Perfectos para</p>
+            <div className="flex flex-wrap gap-3">
+              {events.map(({ Icon, label }) => (
+                <div key={label} className="flex items-center gap-2.5 bg-white/4 hover:bg-[#3DBFBF]/10 border border-white/8 hover:border-[#3DBFBF]/30 rounded-full px-5 py-2.5 transition-all duration-200 cursor-default">
+                  <Icon className="w-4 h-4 text-[#3DBFBF]" strokeWidth={1.75} />
+                  <span className="font-['Poppins'] text-white/70 text-sm font-medium">{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function CallToAction() {
   return (
     <section className="relative bg-[#050F0F] py-28 px-4 overflow-hidden">
@@ -900,6 +1184,137 @@ function Footer() {
   )
 }
 
+function SecretMenuItem() {
+  const [revealed, setRevealed] = useState(false)
+  const ref = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setRevealed(true) },
+      { threshold: 0.3 }
+    )
+    if (ref.current) observer.observe(ref.current)
+    return () => observer.disconnect()
+  }, [])
+
+  const proteins = ['Carne Asada', 'Chicken', 'Chorizo', 'Shrimp', 'Adobo Pork']
+  const served = ['Rice', 'Lettuce', 'Pico', 'Guac', 'Queso', 'Sautéed Onions', 'Crema', 'Naan']
+
+  return (
+    <section className="bg-[#080808] py-28 px-4 overflow-hidden relative">
+      {/* Noise texture overlay */}
+      <div className="absolute inset-0 opacity-[0.03]" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+        backgroundSize: '128px',
+      }} />
+
+      {/* Red glow top-left */}
+      <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-red-900/20 blur-3xl pointer-events-none" />
+
+      <div ref={ref} className="max-w-7xl mx-auto relative z-10">
+
+        {/* Top label — classified stamp */}
+        <div className="flex items-center justify-center mb-16">
+          <div className="flex items-center gap-4">
+            <div className="h-px w-16 bg-red-600/40" />
+            <div className={`border-2 border-red-600 px-5 py-1.5 rotate-[-1.5deg] transition-all duration-700 ${revealed ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
+              <p className="font-['Poppins'] text-red-500 text-xs font-black uppercase tracking-[0.5em]">⚠ Classified</p>
+            </div>
+            <div className="h-px w-16 bg-red-600/40" />
+          </div>
+        </div>
+
+        {/* Main grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+          {/* Image side */}
+          <div className={`relative transition-all duration-1000 delay-200 ${revealed ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+            {/* Scanline effect */}
+            <div className="absolute inset-0 z-10 rounded-2xl overflow-hidden pointer-events-none"
+              style={{ background: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px)' }} />
+
+            <div className="relative rounded-2xl overflow-hidden aspect-square shadow-2xl shadow-black/80">
+              <img
+                src="/secret%20menu%20item.jpg"
+                alt="Secret Menu Item"
+                className="w-full h-full object-cover"
+              />
+              {/* Red tint overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20" />
+              <div className="absolute inset-0 bg-red-950/20 mix-blend-multiply" />
+            </div>
+
+            {/* Corner classification marks */}
+            <div className="absolute top-3 left-3 w-5 h-5 border-t-2 border-l-2 border-red-600/60 rounded-tl" />
+            <div className="absolute top-3 right-3 w-5 h-5 border-t-2 border-r-2 border-red-600/60 rounded-tr" />
+            <div className="absolute bottom-3 left-3 w-5 h-5 border-b-2 border-l-2 border-red-600/60 rounded-bl" />
+            <div className="absolute bottom-3 right-3 w-5 h-5 border-b-2 border-r-2 border-red-600/60 rounded-br" />
+
+            {/* Ask badge */}
+            <div className="absolute -bottom-5 -right-5 bg-red-600 rounded-2xl px-5 py-4 shadow-2xl shadow-red-900/60 rotate-[3deg]">
+              <p className="font-['Poppins'] text-white text-[10px] font-black uppercase tracking-widest leading-tight">Ask for it<br />by name</p>
+            </div>
+          </div>
+
+          {/* Text side */}
+          <div className={`transition-all duration-1000 delay-400 ${revealed ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+
+            {/* Title */}
+            <div className="mb-8">
+              <p className="font-['Poppins'] text-red-500/70 text-[11px] font-bold uppercase tracking-[0.4em] mb-4">
+                Not on the menu. But it's real.
+              </p>
+              <h2 className="font-['Playfair_Display'] font-black text-white leading-[0.9]" style={{ fontSize: 'clamp(44px, 6vw, 80px)' }}>
+                Taco Truck<br />
+                <span className="text-red-500 italic">Special.</span>
+              </h2>
+              <div className="w-10 h-0.5 bg-red-600/50 mt-6" />
+            </div>
+
+            {/* Choose protein */}
+            <div className="mb-8">
+              <p className="font-['Poppins'] text-white/30 text-[10px] font-bold uppercase tracking-[0.35em] mb-3">Choose your protein</p>
+              <div className="flex flex-wrap gap-2">
+                {proteins.map((p) => (
+                  <span key={p} className="font-['Poppins'] text-sm font-semibold text-white/80 bg-white/5 border border-white/10 px-3.5 py-1.5 rounded-full">
+                    {p}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Served with */}
+            <div className="mb-10">
+              <p className="font-['Poppins'] text-white/30 text-[10px] font-bold uppercase tracking-[0.35em] mb-3">Served with</p>
+              <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+                {served.map((item) => (
+                  <div key={item} className="flex items-center gap-2">
+                    <div className="w-1 h-1 rounded-full bg-red-500/70 flex-shrink-0" />
+                    <span className="font-['Poppins'] text-white/65 text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* CTA */}
+            <a
+              href="https://tacosmijalisco.cloveronline.com/menu/all"
+              target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-500 text-white font-['Poppins'] font-bold text-sm px-8 py-4 rounded-xl transition-all duration-200 hover:shadow-2xl hover:shadow-red-900/50 hover:-translate-y-0.5"
+            >
+              Order the Special <ArrowRight className="w-4 h-4" />
+            </a>
+
+            <p className="font-['Poppins'] text-white/20 text-xs mt-4">
+              Not listed online — ask in person or mention it when ordering.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 /* ─────────────────────────────── MAIN APP ──────────────────────────────────── */
 
 function App() {
@@ -918,11 +1333,14 @@ function App() {
       <Stats />
       <PhotoStrip />
       <Menu />
+      <PizzaMondays />
       <Quality />
       <Reviews />
       <FoodGallery />
+      <Catering />
       <About />
       <Location />
+      <SecretMenuItem />
       <CallToAction />
       <Footer />
     </div>
