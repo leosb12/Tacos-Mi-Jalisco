@@ -171,16 +171,16 @@ const stripPhotos = [
   '/platos/tacos.jpg',
   '/platos/556288547_1142934761149199_4934172113736430976_n.jpg',
   '/platos/558847577_1148012900641385_3455552489018663095_n.jpg',
-  '/platos/fish tacos.jpg',
+  '/platos/fish%20tacos.jpg',
   '/platos/625977225_1237897761652898_5481449914208638856_n.jpg',
   '/platos/634424328_1251884686920872_365800804817259266_n.jpg',
   '/platos/634831525_1251884750254199_5372945971880681796_n.jpg',
   '/platos/636851891_1251884626920878_8684798062009883049_n.jpg',
   '/platos/637151210_1251884693587538_3798225634366397060_n.jpg',
   '/platos/638541360_1251884630254211_8865505946667913032_n.jpg',
-  '/platos 2/481706382_992139792895364_4246540366116021235_n.jpg',
-  '/platos 2/485766901_999754718800538_4577626954209206564_n.jpg',
-  '/platos 2/486379358_1002338201875523_4160361520267368231_n.jpg',
+  '/platos%202/481706382_992139792895364_4246540366116021235_n.jpg',
+  '/platos%202/485766901_999754718800538_4577626954209206564_n.jpg',
+  '/platos%202/486379358_1002338201875523_4160361520267368231_n.jpg',
   '/nachos.jpg',
 ]
 
@@ -189,21 +189,21 @@ const galleryPhotos = [
   '/platos/tacos2.jpg',
   '/platos/Pizza.jpg',
   '/platos/tacos.jpg',
-  '/platos/fish tacos.jpg',
+  '/platos/fish%20tacos.jpg',
   '/platos/burrito.jpg',
-  '/platos/3 platos.jpg',
+  '/platos/3%20platos.jpg',
   '/platos/postre.jpg',
   '/platos/pizza2.jpg',
-  '/platos/Tacos or burritos.jpg',
+  '/platos/Tacos%20or%20burritos.jpg',
   '/platos/postre2.jpg',
-  '/platos/cinnamon rolls.jpg',
+  '/platos/cinnamon%20rolls.jpg',
   '/platos/desayuno.jpg',
   '/platos/552910526_1138203494955659_6539149764488120952_n.jpg',
   '/platos/561794658_1156754203100588_3253889954766667126_n.jpg',
   '/platos/591163762_1190394266403248_4965598962446868990_n.jpg',
-  '/platos 2/481706382_992139792895364_4246540366116021235_n.jpg',
-  '/platos 2/485766901_999754718800538_4577626954209206564_n.jpg',
-  '/platos 2/486379358_1002338201875523_4160361520267368231_n.jpg',
+  '/platos%202/481706382_992139792895364_4246540366116021235_n.jpg',
+  '/platos%202/485766901_999754718800538_4577626954209206564_n.jpg',
+  '/platos%202/486379358_1002338201875523_4160361520267368231_n.jpg',
   '/nachos.jpg',
 ]
 
@@ -682,6 +682,7 @@ function About() {
 function Location() {
   const todayIndex = new Date().getDay()
   const adjustedIndex = (todayIndex + 6) % 7
+  const [mapLoaded, setMapLoaded] = useState(false)
 
   return (
     <section id="ubicacion" className="bg-[#0D2020] py-24 px-4 relative overflow-hidden">
@@ -699,13 +700,23 @@ function Location() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Map */}
-          <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10 h-80 lg:h-auto min-h-[300px]">
+          <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10 h-80 lg:h-auto min-h-[300px] relative">
+            {!mapLoaded && (
+              <div className="absolute inset-0 bg-[#0D2020] flex flex-col items-center justify-center gap-3 z-10">
+                <svg className="w-8 h-8 text-[#3DBFBF] animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
+                </svg>
+                <p className="font-['Poppins'] text-[#3DBFBF] text-sm font-semibold tracking-wide">Cargando mapa...</p>
+              </div>
+            )}
             <iframe
               title="Tacos Mi Jalisco Truck Location"
               src="https://maps.google.com/maps?q=461+N+Broadway,+Portland,+TN&output=embed"
               width="100%" height="100%"
               style={{ border: 0, minHeight: '300px' }}
               allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+              onLoad={() => setMapLoaded(true)}
             />
           </div>
 
