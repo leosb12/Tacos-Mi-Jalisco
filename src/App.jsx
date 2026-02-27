@@ -153,13 +153,13 @@ const qualities = [
 ]
 
 const hours = [
-  { day: 'Lunes',     time: '11:00 AM – 9:00 PM' },
-  { day: 'Martes',    time: '11:00 AM – 9:00 PM' },
-  { day: 'Miércoles', time: '11:00 AM – 9:00 PM' },
-  { day: 'Jueves',    time: '11:00 AM – 9:00 PM' },
-  { day: 'Viernes',   time: '11:00 AM – 10:00 PM' },
-  { day: 'Sábado',    time: '10:00 AM – 10:00 PM' },
-  { day: 'Domingo',   time: '10:00 AM – 8:00 PM' },
+  { day: 'Lunes',     time: '10:30 AM – 6:00 PM' },
+  { day: 'Martes',    time: '10:30 AM – 6:00 PM' },
+  { day: 'Miércoles', time: '10:30 AM – 6:00 PM' },
+  { day: 'Jueves',    time: '10:30 AM – 6:00 PM' },
+  { day: 'Viernes',   time: '10:30 AM – 6:00 PM' },
+  { day: 'Sábado',    time: '11:00 AM – 3:00 PM' },
+  { day: 'Domingo',   time: 'Cerrado' },
 ]
 
 /* Photo strip — auto-scroll banner between Stats and Menu */
