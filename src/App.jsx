@@ -1033,17 +1033,16 @@ function Catering() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="https://www.facebook.com/TacosMiJaliscoTruck"
-                  target="_blank" rel="noopener noreferrer"
+                  href="tel:+12703038923"
                   className="inline-flex items-center justify-center gap-2 bg-[#3DBFBF] hover:bg-[#2EAEAE] text-white font-['Poppins'] font-bold text-sm px-7 py-3.5 rounded-xl transition-all duration-200 hover:shadow-2xl hover:shadow-[#3DBFBF]/30 hover:-translate-y-0.5"
                 >
                   Contáctanos <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
-                  href="tel:"
+                  href="tel:+12703038923"
                   className="inline-flex items-center justify-center gap-2 border border-white/15 hover:border-[#3DBFBF]/50 text-white/60 hover:text-[#3DBFBF] font-['Poppins'] font-medium text-sm px-7 py-3.5 rounded-xl transition-all duration-200"
                 >
-                  Llamar ahora
+                  (270) 303-8923
                 </a>
               </div>
             </div>
@@ -1163,6 +1162,10 @@ function Footer() {
               <a href="https://www.facebook.com/TacosMiJaliscoTruck" target="_blank" rel="noopener noreferrer"
                 className="block font-['Poppins'] text-white/40 hover:text-[#3DBFBF] text-sm transition-colors">
                 Facebook: @TacosMiJaliscoTruck
+              </a>
+              <a href="tel:+12703038923"
+                className="block font-['Poppins'] text-white/40 hover:text-[#3DBFBF] text-sm transition-colors">
+                (270) 303-8923
               </a>
             </div>
           </div>
