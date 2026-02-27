@@ -1033,7 +1033,8 @@ function Catering() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="tel:+12703038923"
+                  href="https://wa.me/12703038923"
+                  target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#3DBFBF] hover:bg-[#2EAEAE] text-white font-['Poppins'] font-bold text-sm px-7 py-3.5 rounded-xl transition-all duration-200 hover:shadow-2xl hover:shadow-[#3DBFBF]/30 hover:-translate-y-0.5"
                 >
                   Contáctanos <ArrowRight className="w-4 h-4" />
