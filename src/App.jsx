@@ -120,7 +120,7 @@ const menuCategories = [
     id: 'nachos',
     label: 'Nachos',
     Icon: Sparkles,
-    image: '/platos/nachos.jpg',
+    image: '/nachos.jpg',
     items: [
       { name: 'Cali Nachos', desc: 'Protein / Rice / Beans / Queso / Pico / Crema', price: '$12.60', tag: null },
       { name: 'Jalisco Style', desc: 'Steak / Chicken / Chorizo upgrade', price: '+$2', tag: null },
@@ -181,7 +181,7 @@ const stripPhotos = [
   '/platos 2/481706382_992139792895364_4246540366116021235_n.jpg',
   '/platos 2/485766901_999754718800538_4577626954209206564_n.jpg',
   '/platos 2/486379358_1002338201875523_4160361520267368231_n.jpg',
-  '/platos 2/nachos.jpg',
+  '/nachos.jpg',
 ]
 
 /* Gallery — masonry grid of real food photos */
@@ -204,7 +204,7 @@ const galleryPhotos = [
   '/platos 2/481706382_992139792895364_4246540366116021235_n.jpg',
   '/platos 2/485766901_999754718800538_4577626954209206564_n.jpg',
   '/platos 2/486379358_1002338201875523_4160361520267368231_n.jpg',
-  '/platos 2/nachos.jpg',
+  '/nachos.jpg',
 ]
 
 /* ─────────────────────────────── COMPONENTS ───────────────────────────────── */
