@@ -26,8 +26,8 @@ const menuCategories = [
       { name: 'Barbacoa', desc: 'Street: Onion / Cilantro · Cali: Cheese / Lettuce / Pico / Crema', price: '$3.15 – $3.70', tag: null },
       { name: 'Lengua', desc: 'Cali style: Cheese / Lettuce / Pico / Crema', price: '$3.70', tag: null },
       { name: 'Shrimp', desc: 'Cali style: Cheese / Lettuce / Pico / Crema', price: '$3.70', tag: null },
-      { name: 'Surf N Turf Tacos', desc: 'Shrimp / Steak / Chorizo / Cheese / Grilled Onions / Cilantro / Cabbage / Guac / Baja Sauce', price: '$14.18', tag: 'Especial' },
-      { name: 'Queso Shrimp Tacos', desc: 'Shrimp / Cheese / Pico / Baja Sauce', price: '$13.65', tag: 'Especial' },
+      { name: 'Surf N Turf Tacos', desc: 'Shrimp / Steak / Chorizo / Cheese / Grilled Onions / Cilantro / Cabbage / Guac / Baja Sauce', price: '$14.18', tag: 'Special' },
+      { name: 'Queso Shrimp Tacos', desc: 'Shrimp / Cheese / Pico / Baja Sauce', price: '$13.65', tag: 'Special' },
       { name: 'Baja Style', desc: 'Cabbage / Pico / Baja Sauce', price: '$3.76+', tag: null },
       { name: 'Mulita', desc: 'Crisp Corn Tortilla / Protein / Cheese / Onion / Cilantro / Guac', price: '$3.76+', tag: null },
       { name: 'Tacodilla', desc: 'Flour Tortilla / Protein / Cheese / Onion / Cilantro / Baja Sauce', price: '$4.26+', tag: null },
@@ -39,9 +39,9 @@ const menuCategories = [
     Icon: Flame,
     image: '/birria.jpg',
     items: [
-      { name: 'Quesobirrias', desc: 'Guajillo crisp tortilla / Cheese / Protein / Cilantro / Consomé', price: '$13.65', tag: 'Must Try' },
-      { name: 'Quesorrito', desc: 'Guajillo crisp burrito / Rice / Beans / Cheese / Onion / Cilantro / Consomé', price: '$13.65', tag: null },
-      { name: 'Birria Quesadilla', desc: 'Crisp flour tortillas / Onion / Cilantro / Mozzarella / Grilled Onion / Crema / Guac / Consomé', price: '$14.18', tag: null },
+      { name: 'Quesobirrias', desc: 'Guajillo crisp tortilla / Cheese / Protein / Cilantro / Consomme', price: '$13.65', tag: 'Must Try' },
+      { name: 'Quesorrito', desc: 'Guajillo crisp burrito / Rice / Beans / Cheese / Onion / Cilantro / Consomme', price: '$13.65', tag: null },
+      { name: 'Birria Quesadilla', desc: 'Crisp flour tortillas / Onion / Cilantro / Mozzarella / Grilled Onion / Crema / Guac / Consomme', price: '$14.18', tag: null },
     ],
   },
   {
@@ -144,22 +144,22 @@ const menuCategories = [
 ]
 
 const qualities = [
-  { Icon: Beef,          title: 'Carnes Premium',      desc: 'USDA Choice cuts, hand-trimmed and marinated overnight. Our birria braises for 12+ hours every single day.' },
-  { Icon: Leaf,          title: 'Hierbas Frescas',     desc: 'Cilantro, epazote and every herb sourced fresh daily. No dried shortcuts — ever.' },
-  { Icon: FlameKindling, title: 'Salsas Artesanales',  desc: 'Fire-roasted and made from scratch every morning. No jarred sauces allowed on this truck.' },
-  { Icon: Star,          title: 'Quesos Importados',   desc: 'Oaxacan quesillo, cotija, panela — authentic Mexican creameries for the real flavor of Jalisco.' },
-  { Icon: Wheat,         title: 'Tortillas de Maíz',   desc: 'Hand-pressed masa tortillas made to order with non-GMO corn. You will taste the difference.' },
-  { Icon: Flame,         title: 'Chiles Auténticos',   desc: 'Guajillo, ancho, árbol, morita — real Mexican chiles toasted and ground in-house daily.' },
+  { Icon: Beef,          title: 'Premium Meats',       desc: 'USDA Choice cuts, hand-trimmed and marinated overnight. Our birria braises for 12+ hours every single day.' },
+  { Icon: Leaf,          title: 'Fresh Herbs',         desc: 'Cilantro, epazote, and fresh herbs sourced daily. No dried shortcuts, ever.' },
+  { Icon: FlameKindling, title: 'Housemade Salsas',    desc: 'Fire-roasted and made from scratch every morning. No jarred sauces on this truck.' },
+  { Icon: Star,          title: 'Imported Cheeses',    desc: 'Oaxacan quesillo, cotija, panela, authentic Mexican creamery cheeses for real Jalisco flavor.' },
+  { Icon: Wheat,         title: 'Corn Tortillas',      desc: 'Hand-pressed masa tortillas made to order with non-GMO corn. You can taste the difference.' },
+  { Icon: Flame,         title: 'Authentic Chiles',    desc: 'Guajillo, ancho, arbol, morita, real Mexican chiles toasted and ground in-house every day.' },
 ]
 
 const hours = [
-  { day: 'Lunes',     time: '10:30 AM – 6:00 PM' },
-  { day: 'Martes',    time: '10:30 AM – 6:00 PM' },
-  { day: 'Miércoles', time: '10:30 AM – 6:00 PM' },
-  { day: 'Jueves',    time: '10:30 AM – 6:00 PM' },
-  { day: 'Viernes',   time: '10:30 AM – 6:00 PM' },
-  { day: 'Sábado',    time: '11:00 AM – 3:00 PM' },
-  { day: 'Domingo',   time: 'Cerrado' },
+  { day: 'Monday',    time: '10:30 AM – 6:00 PM' },
+  { day: 'Tuesday',   time: '10:30 AM – 6:00 PM' },
+  { day: 'Wednesday', time: '10:30 AM – 6:00 PM' },
+  { day: 'Thursday',  time: '10:30 AM – 6:00 PM' },
+  { day: 'Friday',    time: '10:30 AM – 6:00 PM' },
+  { day: 'Saturday',  time: '11:00 AM – 3:00 PM' },
+  { day: 'Sunday',    time: 'Closed' },
 ]
 
 /* Photo strip — auto-scroll banner between Stats and Menu */
@@ -230,7 +230,7 @@ const pizzas = [
     featured: true,
   },
   {
-    name: 'Carne Asada',
+    name: 'Grilled Steak',
     desc: null,
     image: '/pizza/carne%20asada%20pizza.jpg',
     tag: null,
@@ -271,7 +271,7 @@ const pizzas = [
 
 function NuevosPlatos() {
   return (
-    <section id="nuevos" className="bg-[#060F0F] overflow-hidden relative">
+    <section id="new-dishes" className="bg-[#060F0F] overflow-hidden relative">
       {/* Glows */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#3DBFBF]/5 blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-[#F5C542]/4 blur-3xl pointer-events-none" />
@@ -282,22 +282,22 @@ function NuevosPlatos() {
           <div>
             <div className="inline-flex items-center gap-2 bg-[#3DBFBF]/10 border border-[#3DBFBF]/25 rounded-full px-4 py-1.5 mb-5">
               <FlameKindling className="w-3 h-3 text-[#3DBFBF]" strokeWidth={2} />
-              <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.3em]">Recién en el menú</p>
+              <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.3em]">Just added</p>
             </div>
             <h2 className="font-['Playfair_Display'] font-black text-white leading-none" style={{ fontSize: 'clamp(52px, 8vw, 96px)' }}>
-              Lo Más<br /><span className="text-[#3DBFBF] italic">Nuevo</span>
+              What&apos;s<br /><span className="text-[#3DBFBF] italic">New</span>
             </h2>
           </div>
           <div className="max-w-xs">
             <p className="font-['Poppins'] text-white/40 text-sm leading-relaxed">
-              Platos recién sumados al menú. Frescos, apetecibles y con todo el sabor de Jalisco en cada mordida.
+              Fresh additions to the menu. Bold, craveable, and packed with the flavor of Jalisco in every bite.
             </p>
             <a
               href="https://tacosmijalisco.cloveronline.com/menu/all"
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-5 bg-[#3DBFBF] hover:bg-[#2EAEAE] text-white font-['Poppins'] font-bold text-sm px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-[#3DBFBF]/30 hover:-translate-y-0.5"
             >
-              Ordenar Ahora <ArrowRight className="w-4 h-4" />
+              Order Now <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </div>
@@ -314,17 +314,17 @@ function NuevosPlatos() {
                 <div className="w-8 h-8 rounded-lg bg-[#3DBFBF]/15 flex items-center justify-center">
                   <FlameKindling className="w-4 h-4 text-[#3DBFBF]" strokeWidth={1.75} />
                 </div>
-                <span className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em]">Nuevo</span>
+                <span className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em]">New</span>
               </div>
               <h3 className="font-['Playfair_Display'] font-black text-white leading-none mb-5" style={{ fontSize: 'clamp(54px, 7vw, 86px)' }}>
                 Sope
               </h3>
               <div className="w-10 h-px bg-[#3DBFBF]/50 mb-5" />
               <p className="font-['Poppins'] text-white/50 text-base leading-relaxed max-w-sm">
-                Masa gruesa y crujiente cubierta con frijoles, proteína a elegir, queso, crema y pico de gallo fresco. Sabor auténtico de Jalisco en cada bocado.
+                Thick, crisp masa topped with beans, your choice of protein, cheese, crema, and fresh pico de gallo. Authentic Jalisco flavor in every bite.
               </p>
               <div className="mt-8 flex flex-wrap gap-2">
-                {['Frijoles', 'Proteína', 'Queso', 'Crema', 'Pico de Gallo'].map((t) => (
+                {['Beans', 'Protein', 'Cheese', 'Crema', 'Pico de Gallo'].map((t) => (
                   <span key={t} className="font-['Poppins'] text-white/50 text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/3">{t}</span>
                 ))}
               </div>
@@ -394,17 +394,17 @@ function NuevosPlatos() {
                 <div className="w-8 h-8 rounded-lg bg-[#F5C542]/15 flex items-center justify-center">
                   <Salad className="w-4 h-4 text-[#F5C542]" strokeWidth={1.75} />
                 </div>
-                <span className="font-['Poppins'] text-[#F5C542] text-[11px] font-bold uppercase tracking-[0.35em]">Nuevo</span>
+                <span className="font-['Poppins'] text-[#F5C542] text-[11px] font-bold uppercase tracking-[0.35em]">New</span>
               </div>
               <h3 className="font-['Playfair_Display'] font-black text-white leading-none mb-5" style={{ fontSize: 'clamp(44px, 5.5vw, 72px)' }}>
                 Taco<br />Salad
               </h3>
               <div className="w-10 h-px bg-[#F5C542]/50 mb-5" />
               <p className="font-['Poppins'] text-white/50 text-base leading-relaxed max-w-sm">
-                Tazón crujiente frito a mano, cargado con proteína, arroz, frijoles, lechuga fresca, pico de gallo, aguacate y crema. Fresco, generoso e irresistible.
+                A hand-fried crispy shell loaded with protein, rice, beans, fresh lettuce, pico de gallo, avocado, and crema. Fresh, generous, and irresistible.
               </p>
               <div className="mt-8 flex flex-wrap gap-2">
-                {['Tazón Frito', 'Arroz', 'Frijoles', 'Aguacate', 'Pico de Gallo'].map((t) => (
+                {['Crispy Shell', 'Rice', 'Beans', 'Avocado', 'Pico de Gallo'].map((t) => (
                   <span key={t} className="font-['Poppins'] text-white/50 text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/3">{t}</span>
                 ))}
               </div>
@@ -423,14 +423,14 @@ function Navbar({ scrolled }) {
   const [open, setOpen] = useState(false)
 
   const links = [
-    { href: '#menu',      label: 'Menú' },
-    { href: '#nuevos',    label: 'Platos Nuevos' },
+    { href: '#menu',      label: 'Menu' },
+    { href: '#new-dishes', label: 'New Dishes' },
     { href: '#pizzas',    label: '$10 Pizza Mondays' },
     { href: '#catering',  label: 'Catering' },
-    { href: '#resenas',   label: 'Reseñas' },
-    { href: '#galeria',   label: 'Galería' },
-    { href: '#nosotros',  label: 'Nosotros' },
-    { href: '#ubicacion', label: 'Ubicación' },
+    { href: '#reviews',   label: 'Reviews' },
+    { href: '#gallery',   label: 'Gallery' },
+    { href: '#about',     label: 'About' },
+    { href: '#location',  label: 'Location' },
   ]
 
   return (
@@ -440,7 +440,7 @@ function Navbar({ scrolled }) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-        <a href="#inicio" className="flex items-center gap-3 group">
+        <a href="#home" className="flex items-center gap-3 group">
           <img src="/favicon-32x32.png" alt="Logo" className="w-9 h-9 rounded-lg" />
           <div className="leading-none">
             <p className="font-['Playfair_Display'] text-white font-black text-lg tracking-wide">Tacos Mi Jalisco</p>
@@ -459,7 +459,7 @@ function Navbar({ scrolled }) {
             target="_blank" rel="noopener noreferrer"
             className="bg-[#3DBFBF] hover:bg-[#2EAEAE] text-white font-['Poppins'] font-semibold text-sm px-5 py-2.5 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-[#3DBFBF]/40 hover:-translate-y-0.5"
           >
-            Ordenar Ahora
+            Order Now
           </a>
         </div>
 
@@ -476,7 +476,7 @@ function Navbar({ scrolled }) {
             </a>
           ))}
           <a href="https://tacosmijalisco.cloveronline.com/menu/all" target="_blank" rel="noopener noreferrer" className="bg-[#3DBFBF] text-white font-['Poppins'] font-semibold text-sm px-5 py-3 rounded-lg text-center">
-            Ordenar Ahora
+            Order Now
           </a>
         </div>
       </div>
@@ -486,7 +486,7 @@ function Navbar({ scrolled }) {
 
 function Hero() {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-end overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-end overflow-hidden">
       {/* Banner background */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/banner.jpg)' }} />
       {/* Cinematic gradient — dark left for text legibility, photo bleeds on right */}
@@ -527,21 +527,21 @@ function Hero() {
           </h1>
 
           <p className="font-['Poppins'] text-white/55 text-base sm:text-lg max-w-lg leading-relaxed mb-10 pl-5 border-l-[3px] border-[#3DBFBF]/60">
-            Carnes premium, salsas hechas desde cero cada mañana,
-            tortillas prensadas a mano. La cocina real de Jalisco
-            en el corazón de Tennessee.
+            Premium meats, scratch-made salsas every morning,
+            and hand-pressed tortillas. Real Jalisco cooking
+            in the heart of Tennessee.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
             <a href="https://tacosmijalisco.cloveronline.com/menu/all"
               target="_blank" rel="noopener noreferrer"
               className="group bg-[#3DBFBF] hover:bg-[#2EAEAE] text-white font-['Poppins'] font-bold text-sm px-7 py-3.5 rounded-lg transition-all duration-300 hover:shadow-xl hover:shadow-[#3DBFBF]/40 hover:-translate-y-0.5 flex items-center justify-center gap-2">
-              Ordenar Ahora
+              Order Now
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
             </a>
             <a href="#menu"
               className="border border-white/20 hover:border-white/50 text-white/70 hover:text-white font-['Poppins'] font-medium text-sm px-7 py-3.5 rounded-lg transition-all duration-300 flex items-center justify-center gap-2">
-              Ver Menú
+              View Menu
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -557,10 +557,10 @@ function Stats() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/8">
           {[
-            { num: '100%', text: 'Ingredientes frescos traídos cada mañana' },
-            { num: '12h+', text: 'Birria braseada lento, todos los días' },
-            { num: '2009', text: 'Sirviendo Portland, Tennessee' },
-            { num: '110+', text: 'Reseñas de 5 estrellas en Google' },
+            { num: '100%', text: 'Fresh ingredients brought in every morning' },
+            { num: '12h+', text: 'Birria slow-braised fresh every day' },
+            { num: '2009', text: 'Serving Portland, Tennessee' },
+            { num: '110+', text: '5-star Google reviews' },
           ].map((s, i) => (
             <div key={i} className="py-8 px-6 md:px-10 first:pl-0 last:pr-0">
               <p className="font-['Playfair_Display'] font-black text-[#3DBFBF] text-4xl md:text-5xl leading-none mb-2">{s.num}</p>
@@ -599,13 +599,13 @@ function Menu() {
         {/* Header — editorial split layout */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <div>
-            <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em] mb-3">Lo Mejor de Jalisco</p>
+            <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em] mb-3">The Best of Jalisco</p>
             <h2 className="font-['Playfair_Display'] font-black text-[#0D2020] leading-none" style={{ fontSize: 'clamp(42px, 6vw, 72px)' }}>
-              Nuestro<br /><span className="text-[#3DBFBF] italic">Menú</span>
+              Our<br /><span className="text-[#3DBFBF] italic">Menu</span>
             </h2>
           </div>
           <p className="font-['Poppins'] text-[#0D2020]/50 text-sm leading-relaxed max-w-xs">
-            Ingredientes premium cada mañana.<br />Sin atajos. Sin conservadores.
+            Premium ingredients every morning.<br />No shortcuts. No preservatives.
           </p>
         </div>
 
@@ -640,7 +640,7 @@ function Menu() {
                 </div>
                 <h3 className="font-['Playfair_Display'] text-white font-black text-3xl md:text-4xl">{cat.label}</h3>
               </div>
-              <p className="font-['Poppins'] text-white/55 text-sm ml-[52px]">{cat.items.length} opciones disponibles</p>
+              <p className="font-['Poppins'] text-white/55 text-sm ml-[52px]">{cat.items.length} options available</p>
             </div>
           </div>
         )}
@@ -661,7 +661,7 @@ function Menu() {
                 <span className="font-['Playfair_Display'] font-black text-[#3DBFBF] text-xl">{item.price}</span>
                 <a href="https://tacosmijalisco.cloveronline.com/menu/all" target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs font-['Poppins'] font-semibold text-[#3DBFBF] hover:text-[#2EAEAE] transition-colors">
-                  Ordenar <ArrowRight className="w-3 h-3" />
+                  Order <ArrowRight className="w-3 h-3" />
                 </a>
               </div>
             </div>
@@ -700,7 +700,7 @@ function PizzaMondays() {
               </div>
             </div>
             <p className="font-['Poppins'] text-white/40 text-sm mt-4 max-w-sm">
-              Todas las pizzas. Cada lunes. <span className="text-[#F5C542] font-semibold">$10</span>.
+              Every pizza. Every Monday. <span className="text-[#F5C542] font-semibold">$10</span>.
             </p>
           </div>
           <a
@@ -708,7 +708,7 @@ function PizzaMondays() {
             target="_blank" rel="noopener noreferrer"
             className="self-start md:self-end inline-flex items-center gap-2 bg-[#F5C542] hover:bg-[#f0bb30] text-[#060F0F] font-['Poppins'] font-bold text-sm px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-[#F5C542]/30 hover:-translate-y-0.5 whitespace-nowrap"
           >
-            Ordenar ahora <ArrowRight className="w-4 h-4" />
+            Order now <ArrowRight className="w-4 h-4" />
           </a>
         </div>
 
@@ -777,8 +777,8 @@ function PizzaMondays() {
             <div>
               <p className="font-['Poppins'] text-[#F5C542] text-xs font-bold uppercase tracking-widest mb-2">$10 every monday</p>
               <p className="font-['Playfair_Display'] text-white font-black text-xl md:text-2xl leading-snug">
-                El lunes es el mejor<br />
-                <span className="text-[#F5C542]">día de la semana.</span>
+                Monday is the best<br />
+                <span className="text-[#F5C542]">day of the week.</span>
               </p>
             </div>
             <a
@@ -786,7 +786,7 @@ function PizzaMondays() {
               target="_blank" rel="noopener noreferrer"
               className="flex-shrink-0 inline-flex items-center gap-2 bg-[#F5C542] hover:bg-[#f0bb30] text-[#060F0F] font-['Poppins'] font-bold text-sm px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-[#F5C542]/30"
             >
-              Ordenar Pizza <ArrowRight className="w-4 h-4" />
+              Order Pizza <ArrowRight className="w-4 h-4" />
             </a>
           </div>
 
@@ -798,14 +798,14 @@ function PizzaMondays() {
 
 function Quality() {
   return (
-    <section id="calidad" className="bg-[#0D2020] py-24 px-4">
+    <section id="quality" className="bg-[#0D2020] py-24 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header — left-aligned, raw */}
         <div className="mb-16 max-w-2xl">
-          <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em] mb-4">Nuestra Filosofía</p>
+          <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em] mb-4">Our Philosophy</p>
           <h2 className="font-['Playfair_Display'] font-black text-white leading-[0.9]" style={{ fontSize: 'clamp(40px, 6vw, 68px)' }}>
-            Sin atajos.<br />
-            <span className="text-[#3DBFBF] italic">Nunca.</span>
+            No shortcuts.<br />
+            <span className="text-[#3DBFBF] italic">Ever.</span>
           </h2>
           <div className="w-12 h-px bg-[#3DBFBF]/60 mt-6" />
         </div>
@@ -874,17 +874,17 @@ function Reviews() {
   }, [])
 
   return (
-    <section id="resenas" className="bg-[#0D2020] py-24 px-4">
+    <section id="reviews" className="bg-[#0D2020] py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
           <div>
-            <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em] mb-4">Lo que dicen nuestros clientes</p>
+            <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em] mb-4">What our customers say</p>
             <h2 className="font-['Playfair_Display'] font-black text-white leading-none" style={{ fontSize: 'clamp(40px, 6vw, 72px)' }}>
-              Reseñas<br /><span className="text-[#3DBFBF] italic">Reales</span>
+              Real<br /><span className="text-[#3DBFBF] italic">Reviews</span>
             </h2>
           </div>
           <p className="font-['Poppins'] text-white/35 text-xs max-w-xs">
-            La opinión honesta de quienes ya nos visitaron habla por sí sola.
+            Honest feedback from the people who have already visited says it all.
           </p>
         </div>
 
@@ -941,18 +941,18 @@ function GalleryImage({ src }) {
 
 function FoodGallery() {
   return (
-    <section id="galeria" className="bg-[#071414] py-24 px-4">
+    <section id="gallery" className="bg-[#071414] py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
           <div>
-            <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em] mb-3">Fotos Reales</p>
+            <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em] mb-3">Real Photos</p>
             <h2 className="font-['Playfair_Display'] font-black text-white leading-none" style={{ fontSize: 'clamp(38px, 5.5vw, 64px)' }}>
-              Así se ve<br /><span className="text-[#3DBFBF] italic">la pasión</span>
+              This is what<br /><span className="text-[#3DBFBF] italic">passion looks like</span>
             </h2>
           </div>
           <a href="https://www.facebook.com/TacosMiJaliscoTruck" target="_blank" rel="noopener noreferrer"
             className="self-start md:self-end flex items-center gap-2 text-white/40 hover:text-[#3DBFBF] font-['Poppins'] text-xs font-semibold uppercase tracking-wider transition-colors duration-200">
-            <Facebook className="w-3.5 h-3.5" /> Ver más en Facebook
+            <Facebook className="w-3.5 h-3.5" /> See more on Facebook
           </a>
         </div>
 
@@ -969,17 +969,17 @@ function FoodGallery() {
 
 function About() {
   return (
-    <section id="nosotros" className="bg-[#F0FAFA] py-24 px-4">
+    <section id="about" className="bg-[#F0FAFA] py-24 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Visual side */}
         <div className="relative order-2 lg:order-1 pb-8 pr-0 lg:pr-6">
           <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl">
-            <img src="/platos/platos.jpg" alt="Platos de Tacos Mi Jalisco" className="w-full h-full object-cover" loading="lazy" />
+            <img src="/platos/platos.jpg" alt="Tacos Mi Jalisco dishes" className="w-full h-full object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0D2020]/80 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-8">
               <p className="font-['Poppins'] text-[#3DBFBF] text-xs font-bold uppercase tracking-widest mb-2">Portland, Tennessee</p>
               <p className="font-['Playfair_Display'] text-white font-black text-2xl leading-snug">
-                "El sabor de Jalisco,<br />en el corazón de Tennessee."
+                "The taste of Jalisco,<br />in the heart of Tennessee."
               </p>
             </div>
           </div>
@@ -996,30 +996,30 @@ function About() {
 
         {/* Text side */}
         <div className="order-1 lg:order-2">
-          <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em] mb-4">Nuestra Historia</p>
+          <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em] mb-4">Our Story</p>
           <h2 className="font-['Playfair_Display'] font-black text-[#0D2020] leading-[0.9]" style={{ fontSize: 'clamp(36px, 5vw, 60px)' }}>
-            Jalisco en cada <span className="text-[#3DBFBF] italic">mordida</span>
+            Jalisco in every <span className="text-[#3DBFBF] italic">bite</span>
           </h2>
           <div className="w-10 h-px bg-[#3DBFBF]/60 mt-5" />
 
           <p className="font-['Poppins'] text-[#0D2020]/65 text-base leading-relaxed mt-7">
-            Tacos Mi Jalisco Truck nació de una pasión profunda por la cocina tradicional del estado de Jalisco,
-            México — tierra del tequila, el mariachi y los tacos más sabrosos del mundo.
+            Tacos Mi Jalisco Truck was born from a deep love for the traditional cuisine of Jalisco,
+            Mexico, land of tequila, mariachi, and some of the best tacos in the world.
           </p>
           <p className="font-['Poppins'] text-[#0D2020]/65 text-base leading-relaxed mt-4">
-            Trajimos esas recetas auténticas a{' '}
-            <span className="font-semibold text-[#0D2020]">Portland, Tennessee</span>, con un compromiso
-            inquebrantable: usar solo los mejores ingredientes disponibles. Nuestras carnes se marinan por horas,
-            nuestras salsas se hacen desde cero cada mañana y nuestras tortillas se prensan a mano.
+            We brought those authentic recipes to{' '}
+            <span className="font-semibold text-[#0D2020]">Portland, Tennessee</span>, with one unwavering commitment:
+            using only the best ingredients available. Our meats marinate for hours,
+            our salsas are made from scratch every morning, and our tortillas are hand-pressed.
           </p>
           <p className="font-['Poppins'] text-[#0D2020]/65 text-base leading-relaxed mt-4">
-            No es solo comida — es una{' '}
-            <span className="font-semibold text-[#3DBFBF]">experiencia gastronómica</span> que te transporta
-            directo a las calles de Guadalajara.
+            This is not just food, it is a{' '}
+            <span className="font-semibold text-[#3DBFBF]">food experience</span> that takes you straight
+            to the streets of Guadalajara.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            {['Recetas Tradicionales', 'Carnes Premium', 'Salsas Artesanales', 'Est. 2009'].map((t, i) => (
+            {['Traditional Recipes', 'Premium Meats', 'Housemade Salsas', 'Est. 2009'].map((t, i) => (
               <span key={i} className="bg-[#3DBFBF]/10 text-[#2AADAD] font-['Poppins'] text-xs font-semibold px-4 py-2 rounded-full border border-[#3DBFBF]/20">
                 {t}
               </span>
@@ -1037,14 +1037,14 @@ function Location() {
   const [mapLoaded, setMapLoaded] = useState(false)
 
   return (
-    <section id="ubicacion" className="bg-[#0D2020] py-24 px-4 relative overflow-hidden">
+    <section id="location" className="bg-[#0D2020] py-24 px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(61,191,191,0.08)_0%,transparent_60%)]" />
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-14">
           <div>
-            <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em] mb-3">Encuéntranos</p>
+            <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em] mb-3">Find Us</p>
             <h2 className="font-['Playfair_Display'] font-black text-white leading-none" style={{ fontSize: 'clamp(38px, 5.5vw, 68px)' }}>
-              Ubicación &<br /><span className="text-[#3DBFBF] italic">Horarios</span>
+              Location &<br /><span className="text-[#3DBFBF] italic">Hours</span>
             </h2>
           </div>
           <p className="font-['Poppins'] text-white/35 text-xs">461 N Broadway · Portland, TN</p>
@@ -1059,7 +1059,7 @@ function Location() {
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
                 </svg>
-                <p className="font-['Poppins'] text-[#3DBFBF] text-sm font-semibold tracking-wide">Cargando mapa...</p>
+                <p className="font-['Poppins'] text-[#3DBFBF] text-sm font-semibold tracking-wide">Loading map...</p>
               </div>
             )}
             <iframe
@@ -1080,13 +1080,13 @@ function Location() {
                   <MapPin className="w-5 h-5 text-white" strokeWidth={2} />
                 </div>
                 <div>
-                  <p className="font-['Poppins'] text-[#3DBFBF] text-xs font-bold uppercase tracking-wider mb-1">Dirección</p>
+                  <p className="font-['Poppins'] text-[#3DBFBF] text-xs font-bold uppercase tracking-wider mb-1">Address</p>
                   <p className="font-['Playfair_Display'] text-white font-bold text-lg">461 N Broadway</p>
                   <p className="font-['Poppins'] text-white/60 text-sm">Portland, TN · United States, Tennessee</p>
                   <a href="https://maps.google.com/?q=461+N+Broadway,+Portland,+TN" target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 mt-3 text-xs font-['Poppins'] font-semibold text-[#3DBFBF] hover:underline">
                     <ExternalLink className="w-3 h-3" />
-                    Abrir en Google Maps
+                    Open in Google Maps
                   </a>
                 </div>
               </div>
@@ -1098,7 +1098,7 @@ function Location() {
                 <div className="bg-[#27AE60] rounded-xl w-12 h-12 flex items-center justify-center flex-shrink-0">
                   <Clock className="w-5 h-5 text-white" strokeWidth={2} />
                 </div>
-                <p className="font-['Poppins'] text-[#3DBFBF] text-xs font-bold uppercase tracking-wider">Horario de Atención</p>
+                <p className="font-['Poppins'] text-[#3DBFBF] text-xs font-bold uppercase tracking-wider">Hours</p>
               </div>
               <div className="space-y-2">
                 {hours.map((h, i) => (
@@ -1106,7 +1106,7 @@ function Location() {
                     <span className={`font-['Poppins'] text-sm font-medium ${i === adjustedIndex ? 'font-bold' : ''}`}>
                       {h.day}
                       {i === adjustedIndex && (
-                        <span className="ml-2 bg-[#27AE60] text-white text-[9px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">Hoy</span>
+                        <span className="ml-2 bg-[#27AE60] text-white text-[9px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">Today</span>
                       )}
                     </span>
                     <span className="font-['Poppins'] text-sm">{h.time}</span>
@@ -1122,8 +1122,8 @@ function Location() {
                 <Facebook className="w-5 h-5 text-white" strokeWidth={2} />
               </div>
               <div>
-                <p className="font-['Poppins'] text-white font-semibold text-sm">Síguenos en Facebook</p>
-                <p className="font-['Poppins'] text-white/50 text-xs mt-0.5">@TacosMiJaliscoTruck — Especiales & Novedades</p>
+                <p className="font-['Poppins'] text-white font-semibold text-sm">Follow us on Facebook</p>
+                <p className="font-['Poppins'] text-white/50 text-xs mt-0.5">@TacosMiJaliscoTruck — Specials & Updates</p>
               </div>
               <span className="ml-auto text-white/40 group-hover:text-white group-hover:translate-x-1 transition-all duration-200">
                 <ArrowRight className="w-4 h-4" />
@@ -1138,12 +1138,12 @@ function Location() {
 
 function Catering() {
   const events = [
-    { Icon: Music2,       label: 'Quinceañeras' },
-    { Icon: Heart,        label: 'Bodas' },
-    { Icon: Briefcase,    label: 'Eventos Corporativos' },
-    { Icon: GraduationCap, label: 'Graduaciones' },
-    { Icon: Cake,         label: 'Cumpleaños' },
-    { Icon: Users,        label: 'Eventos Privados' },
+    { Icon: Music2,       label: 'Quinceaneras' },
+    { Icon: Heart,        label: 'Weddings' },
+    { Icon: Briefcase,    label: 'Corporate Events' },
+    { Icon: GraduationCap, label: 'Graduations' },
+    { Icon: Cake,         label: 'Birthdays' },
+    { Icon: Users,        label: 'Private Events' },
   ]
 
   return (
@@ -1165,7 +1165,7 @@ function Catering() {
           <div className="max-w-7xl mx-auto w-full">
             <div className="inline-flex items-center gap-2 bg-[#3DBFBF]/15 border border-[#3DBFBF]/30 rounded-full px-4 py-1.5 mb-5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#3DBFBF] animate-pulse" />
-              <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em]">Catering &amp; Eventos</p>
+              <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em]">Catering &amp; Events</p>
             </div>
             <h2 className="font-['Playfair_Display'] font-black text-white leading-[0.88]" style={{ fontSize: 'clamp(52px, 9vw, 110px)' }}>
               We Come<br />
@@ -1185,12 +1185,12 @@ function Catering() {
             {/* Left — proposition */}
             <div>
               <p className="font-['Playfair_Display'] text-white/90 font-bold text-xl md:text-2xl leading-snug mb-6">
-                Tacos Mi Jalisco lleva el sabor de Jalisco directo a tu evento.
-                Auténtico, fresco, sin rodeos.
+                Tacos Mi Jalisco brings the flavor of Jalisco straight to your event.
+                Authentic, fresh, no filler.
               </p>
               <p className="font-['Poppins'] text-white/40 text-sm leading-relaxed mb-8">
-                Desde quinceañeras hasta eventos corporativos — traemos el truck, el equipo y el menú completo.
-                Tú solo disfruta. Nosotros cocinamos.
+                From quinceaneras to corporate events, we bring the truck, the crew, and the full menu.
+                You enjoy it. We cook it.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
@@ -1198,7 +1198,7 @@ function Catering() {
                   target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#3DBFBF] hover:bg-[#2EAEAE] text-white font-['Poppins'] font-bold text-sm px-7 py-3.5 rounded-xl transition-all duration-200 hover:shadow-2xl hover:shadow-[#3DBFBF]/30 hover:-translate-y-0.5"
                 >
-                  Contáctanos <ArrowRight className="w-4 h-4" />
+                  Contact Us <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
                   href="tel:+12703038923"
@@ -1212,10 +1212,10 @@ function Catering() {
             {/* Right — trust stats */}
             <div className="grid grid-cols-2 gap-3">
               {[
-                { val: '15+', label: 'Años de experiencia' },
-                { val: '100%', label: 'Ingredientes frescos' },
-                { val: '∞', label: 'Tacos por evento' },
-                { val: '1', label: 'Llamada para reservar' },
+                { val: '15+', label: 'Years of experience' },
+                { val: '100%', label: 'Fresh ingredients' },
+                { val: '∞', label: 'Tacos per event' },
+                { val: '1', label: 'Call to book' },
               ].map(({ val, label }) => (
                 <div key={label} className="bg-white/4 border border-white/8 rounded-2xl p-6 flex flex-col gap-1">
                   <span className="font-['Playfair_Display'] font-black text-[#3DBFBF]" style={{ fontSize: 'clamp(32px, 4vw, 44px)' }}>{val}</span>
@@ -1227,7 +1227,7 @@ function Catering() {
 
           {/* Event types */}
           <div>
-            <p className="font-['Poppins'] text-white/25 text-[10px] font-bold uppercase tracking-[0.4em] mb-5">Perfectos para</p>
+            <p className="font-['Poppins'] text-white/25 text-[10px] font-bold uppercase tracking-[0.4em] mb-5">Perfect for</p>
             <div className="flex flex-wrap gap-3">
               {events.map(({ Icon, label }) => (
                 <div key={label} className="flex items-center gap-2.5 bg-white/4 hover:bg-[#3DBFBF]/10 border border-white/8 hover:border-[#3DBFBF]/30 rounded-full px-5 py-2.5 transition-all duration-200 cursor-default">
@@ -1256,19 +1256,19 @@ function CallToAction() {
         <div className="max-w-2xl">
           <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.4em] mb-6">Portland, Tennessee</p>
           <h2 className="font-['Playfair_Display'] font-black text-white leading-[0.9] mb-8" style={{ fontSize: 'clamp(48px, 8vw, 100px)' }}>
-            ¿Listo para el mejor<br /><span className="text-[#3DBFBF] italic">taco de tu vida?</span>
+            Ready for the best<br /><span className="text-[#3DBFBF] italic">taco of your life?</span>
           </h2>
           <p className="font-['Poppins'] text-white/45 text-base leading-relaxed mb-10 max-w-md">
-            461 N Broadway, Portland TN. Te prometemos que no te vas a arrepentir.
+            461 N Broadway, Portland TN. You will not regret it.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <a href="https://tacosmijalisco.cloveronline.com/menu/all" target="_blank" rel="noopener noreferrer"
               className="bg-[#3DBFBF] hover:bg-[#2EAEAE] text-white font-['Poppins'] font-bold text-sm px-7 py-3.5 rounded-lg transition-all duration-200 hover:shadow-xl hover:shadow-[#3DBFBF]/30 hover:-translate-y-0.5">
-              Ordenar Ahora
+              Order Now
             </a>
             <a href="#menu"
               className="border border-white/20 hover:border-white/50 text-white/70 hover:text-white font-['Poppins'] font-medium text-sm px-7 py-3.5 rounded-lg transition-all duration-200">
-              Ver el Menú Completo
+              View Full Menu
             </a>
           </div>
         </div>
@@ -1291,25 +1291,25 @@ function Footer() {
               </div>
             </div>
             <p className="font-['Poppins'] text-white/40 text-sm leading-relaxed">
-              Auténtica cocina jaliscience con los mejores ingredientes, directo a tu plato en Portland, Tennessee.
+              Authentic Jalisco-style cooking with the best ingredients, straight to your plate in Portland, Tennessee.
             </p>
           </div>
 
           <div>
-            <p className="font-['Poppins'] text-white font-semibold text-sm uppercase tracking-widest mb-4">Menú Rápido</p>
+            <p className="font-['Poppins'] text-white font-semibold text-sm uppercase tracking-widest mb-4">Quick Menu</p>
             <div className="space-y-2">
               <a href="https://tacosmijalisco.cloveronline.com/menu/all" target="_blank" rel="noopener noreferrer"
                 className="block font-['Poppins'] text-[#3DBFBF] hover:text-white text-sm font-semibold transition-colors duration-200">
-                → Ordenar Online
+                → Order Online
               </a>
               {[
-                { href: '#menu',      label: 'Menú' },
-                { href: '#nuevos',    label: 'Platos Nuevos' },
-                { href: '#resenas',   label: 'Reseñas' },
-                { href: '#galeria',   label: 'Galería' },
-                { href: '#calidad',   label: 'Calidad' },
-                { href: '#nosotros',  label: 'Nuestra Historia' },
-                { href: '#ubicacion', label: 'Ubicación' },
+                { href: '#menu',      label: 'Menu' },
+                { href: '#new-dishes', label: 'New Dishes' },
+                { href: '#reviews',    label: 'Reviews' },
+                { href: '#gallery',    label: 'Gallery' },
+                { href: '#quality',    label: 'Quality' },
+                { href: '#about',      label: 'Our Story' },
+                { href: '#location',   label: 'Location' },
               ].map((l, i) => (
                 <a key={i} href={l.href} className="block font-['Poppins'] text-white/40 hover:text-[#3DBFBF] text-sm transition-colors duration-200">{l.label}</a>
               ))}
@@ -1317,7 +1317,7 @@ function Footer() {
           </div>
 
           <div>
-            <p className="font-['Poppins'] text-white font-semibold text-sm uppercase tracking-widest mb-4">Contacto</p>
+            <p className="font-['Poppins'] text-white font-semibold text-sm uppercase tracking-widest mb-4">Contact</p>
             <div className="space-y-3">
               <p className="font-['Poppins'] text-white/40 text-sm flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 shrink-0" /> 461 N Broadway, Portland, TN
@@ -1336,13 +1336,13 @@ function Footer() {
 
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-['Poppins'] text-white/25 text-xs">
-            © {new Date().getFullYear()} Tacos Mi Jalisco Truck · Portland, TN · Todos los derechos reservados
+            © {new Date().getFullYear()} Tacos Mi Jalisco Truck · Portland, TN · All rights reserved
           </p>
           <div className="flex gap-1 items-center">
             <span className="w-4 h-3 rounded-sm bg-[#006847] inline-block" />
             <span className="w-4 h-3 rounded-sm bg-white inline-block" />
             <span className="w-4 h-3 rounded-sm bg-[#3DBFBF] inline-block" />
-            <span className="font-['Poppins'] text-white/25 text-xs ml-2">Hecho con ❤️ en México 🇲🇽</span>
+            <span className="font-['Poppins'] text-white/25 text-xs ml-2">Made with love in Mexico</span>
           </div>
         </div>
       </div>
@@ -1363,8 +1363,8 @@ function SecretMenuItem() {
     return () => observer.disconnect()
   }, [])
 
-  const proteins = ['Carne Asada', 'Chicken', 'Chorizo', 'Shrimp', 'Adobo Pork']
-  const served = ['Rice', 'Lettuce', 'Pico', 'Guac', 'Queso', 'Sautéed Onions', 'Crema', 'Naan']
+  const proteins = ['Grilled Steak', 'Chicken', 'Chorizo', 'Shrimp', 'Adobo Pork']
+  const served = ['Rice', 'Lettuce', 'Pico de Gallo', 'Avocado', 'Cheese', 'Sauteed Onions', 'Crema', 'Naan']
 
   return (
     <section className="bg-[#080808] py-28 px-4 overflow-hidden relative">
@@ -1384,7 +1384,7 @@ function SecretMenuItem() {
           <div className="flex items-center gap-4">
             <div className="h-px w-16 bg-red-600/40" />
             <div className={`border-2 border-red-600 px-5 py-1.5 rotate-[-1.5deg] transition-all duration-700 ${revealed ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
-              <p className="font-['Poppins'] text-red-500 text-xs font-black uppercase tracking-[0.5em]">⚠ Classified</p>
+              <p className="font-['Poppins'] text-red-500 text-xs font-black uppercase tracking-[0.5em]">Classified</p>
             </div>
             <div className="h-px w-16 bg-red-600/40" />
           </div>

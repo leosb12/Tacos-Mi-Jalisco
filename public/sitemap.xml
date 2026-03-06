@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <url>
+    <loc>https://www.tacosmijaliscotruck.com/</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.tacosmijaliscotruck.com/android-chrome-512x512.png</image:loc>
+      <image:title>Tacos Mi Jalisco Truck Logo</image:title>
+      <image:caption>Official Tacos Mi Jalisco Truck logo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tacosmijaliscotruck.com/banner.jpg</image:loc>
+      <image:title>Tacos Mi Jalisco Truck</image:title>
+      <image:caption>Authentic Mexican food in Portland, Tennessee</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tacosmijaliscotruck.com/platos/tacos2.jpg</image:loc>
+      <image:title>Tacos Mi Jalisco</image:title>
+      <image:caption>Tacos prepared by Tacos Mi Jalisco Truck</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tacosmijaliscotruck.com/platos/Pizza.jpg</image:loc>
+      <image:title>Pizza Mondays</image:title>
+      <image:caption>Pizza Mondays at Tacos Mi Jalisco Truck</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tacosmijaliscotruck.com/nuevos/sope.jpeg</image:loc>
+      <image:title>Sope</image:title>
+      <image:caption>New sope at Tacos Mi Jalisco Truck</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tacosmijaliscotruck.com/nuevos/taco%20salad.jpeg</image:loc>
+      <image:title>Taco Salad</image:title>
+      <image:caption>New taco salad at Tacos Mi Jalisco Truck</image:caption>
+    </image:image>
+  </url>
+</urlset>
