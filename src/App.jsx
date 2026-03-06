@@ -281,7 +281,7 @@ function NuevosPlatos() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
             <div className="inline-flex items-center gap-2 bg-[#3DBFBF]/10 border border-[#3DBFBF]/25 rounded-full px-4 py-1.5 mb-5">
-              <Sparkles className="w-3 h-3 text-[#3DBFBF]" strokeWidth={2} />
+              <FlameKindling className="w-3 h-3 text-[#3DBFBF]" strokeWidth={2} />
               <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.3em]">Recién en el menú</p>
             </div>
             <h2 className="font-['Playfair_Display'] font-black text-white leading-none" style={{ fontSize: 'clamp(52px, 8vw, 96px)' }}>
@@ -312,7 +312,7 @@ function NuevosPlatos() {
             <div className="flex flex-col justify-center py-16 pr-0 lg:pr-16 border-b lg:border-b-0 lg:border-r border-white/6">
               <div className="inline-flex items-center gap-2 mb-6 self-start">
                 <div className="w-8 h-8 rounded-lg bg-[#3DBFBF]/15 flex items-center justify-center">
-                  <Sparkles className="w-4 h-4 text-[#3DBFBF]" strokeWidth={1.75} />
+                  <FlameKindling className="w-4 h-4 text-[#3DBFBF]" strokeWidth={1.75} />
                 </div>
                 <span className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em]">Nuevo</span>
               </div>
