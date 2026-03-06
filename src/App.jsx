@@ -184,6 +184,11 @@ const stripPhotos = [
   '/platos%202/485766901_999754718800538_4577626954209206564_n.jpg',
   '/platos%202/486379358_1002338201875523_4160361520267368231_n.jpg',
   '/nachos.jpg',
+  '/nuevos/sope.jpeg',
+  '/nuevos/sope%202.jpg',
+  '/nuevos/taco%20salad.jpeg',
+  '/nuevos/taco%20salad%202%2043.jpeg',
+  '/nuevos/taco%20salad%203.jpeg',
 ]
 
 /* Gallery — masonry grid of real food photos */
@@ -208,6 +213,11 @@ const galleryPhotos = [
   '/platos%202/485766901_999754718800538_4577626954209206564_n.jpg',
   '/platos%202/486379358_1002338201875523_4160361520267368231_n.jpg',
   '/nachos.jpg',
+  '/nuevos/sope.jpeg',
+  '/nuevos/sope%202.jpg',
+  '/nuevos/taco%20salad.jpeg',
+  '/nuevos/taco%20salad%202%2043.jpeg',
+  '/nuevos/taco%20salad%203.jpeg',
 ]
 
 /* ─── Pizza Mondays ─── */
@@ -259,12 +269,163 @@ const pizzas = [
 
 /* ─────────────────────────────── COMPONENTS ───────────────────────────────── */
 
+function NuevosPlatos() {
+  return (
+    <section id="nuevos" className="bg-[#060F0F] overflow-hidden relative">
+      {/* Glows */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#3DBFBF]/5 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-[#F5C542]/4 blur-3xl pointer-events-none" />
+
+      {/* ── HEADER ── */}
+      <div className="max-w-7xl mx-auto px-4 pt-24 pb-16 relative z-10">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+          <div>
+            <div className="inline-flex items-center gap-2 bg-[#3DBFBF]/10 border border-[#3DBFBF]/25 rounded-full px-4 py-1.5 mb-5">
+              <Sparkles className="w-3 h-3 text-[#3DBFBF]" strokeWidth={2} />
+              <p className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.3em]">Recién en el menú</p>
+            </div>
+            <h2 className="font-['Playfair_Display'] font-black text-white leading-none" style={{ fontSize: 'clamp(52px, 8vw, 96px)' }}>
+              Lo Más<br /><span className="text-[#3DBFBF] italic">Nuevo</span>
+            </h2>
+          </div>
+          <div className="max-w-xs">
+            <p className="font-['Poppins'] text-white/40 text-sm leading-relaxed">
+              Platos recién sumados al menú. Frescos, apetecibles y con todo el sabor de Jalisco en cada mordida.
+            </p>
+            <a
+              href="https://tacosmijalisco.cloveronline.com/menu/all"
+              target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-5 bg-[#3DBFBF] hover:bg-[#2EAEAE] text-white font-['Poppins'] font-bold text-sm px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-[#3DBFBF]/30 hover:-translate-y-0.5"
+            >
+              Ordenar Ahora <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* ── SOPE ── horizontal split: text left / images right */}
+      <div className="border-t border-white/6">
+        <div className="max-w-7xl mx-auto px-4 py-0">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-0 items-stretch">
+
+            {/* Text */}
+            <div className="flex flex-col justify-center py-16 pr-0 lg:pr-16 border-b lg:border-b-0 lg:border-r border-white/6">
+              <div className="inline-flex items-center gap-2 mb-6 self-start">
+                <div className="w-8 h-8 rounded-lg bg-[#3DBFBF]/15 flex items-center justify-center">
+                  <Sparkles className="w-4 h-4 text-[#3DBFBF]" strokeWidth={1.75} />
+                </div>
+                <span className="font-['Poppins'] text-[#3DBFBF] text-[11px] font-bold uppercase tracking-[0.35em]">Nuevo</span>
+              </div>
+              <h3 className="font-['Playfair_Display'] font-black text-white leading-none mb-5" style={{ fontSize: 'clamp(54px, 7vw, 86px)' }}>
+                Sope
+              </h3>
+              <div className="w-10 h-px bg-[#3DBFBF]/50 mb-5" />
+              <p className="font-['Poppins'] text-white/50 text-base leading-relaxed max-w-sm">
+                Masa gruesa y crujiente cubierta con frijoles, proteína a elegir, queso, crema y pico de gallo fresco. Sabor auténtico de Jalisco en cada bocado.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-2">
+                {['Frijoles', 'Proteína', 'Queso', 'Crema', 'Pico de Gallo'].map((t) => (
+                  <span key={t} className="font-['Poppins'] text-white/50 text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/3">{t}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* Images — two squares filling the full panel height */}
+            <div className="grid grid-cols-2 gap-3 py-8 pl-0 lg:pl-8 min-h-[400px]">
+              <div className="rounded-2xl overflow-hidden">
+                <img
+                  src="/nuevos/sope.jpeg" alt="Sope"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  style={{ aspectRatio: '1/1' }}
+                  loading="lazy"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden">
+                <img
+                  src="/nuevos/sope%202.jpg" alt="Sope"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 delay-75"
+                  style={{ aspectRatio: '1/1' }}
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* ── TACO SALAD ── full-bleed mosaic with text overlay */}
+      <div className="border-t border-white/6 relative">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-0 items-stretch">
+
+            {/* Photo mosaic — left */}
+            <div className="grid grid-cols-2 grid-rows-2 gap-3 py-8 pr-0 lg:pr-8 border-b lg:border-b-0 lg:border-r border-white/6">
+              {/* Big hero — spans full height on left sub-column */}
+              <div className="row-span-2 rounded-2xl overflow-hidden">
+                <img
+                  src="/nuevos/taco%20salad.jpeg" alt="Taco Salad"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  style={{ aspectRatio: '4/3' }}
+                  loading="lazy"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden">
+                <img
+                  src="/nuevos/taco%20salad%202%2043.jpeg" alt="Taco Salad"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 delay-75"
+                  style={{ aspectRatio: '4/3' }}
+                  loading="lazy"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden">
+                <img
+                  src="/nuevos/taco%20salad%203.jpeg" alt="Taco Salad"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 delay-100"
+                  style={{ aspectRatio: '4/3' }}
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Text — right */}
+            <div className="flex flex-col justify-center py-16 pl-0 lg:pl-16">
+              <div className="inline-flex items-center gap-2 mb-6 self-start">
+                <div className="w-8 h-8 rounded-lg bg-[#F5C542]/15 flex items-center justify-center">
+                  <Salad className="w-4 h-4 text-[#F5C542]" strokeWidth={1.75} />
+                </div>
+                <span className="font-['Poppins'] text-[#F5C542] text-[11px] font-bold uppercase tracking-[0.35em]">Nuevo</span>
+              </div>
+              <h3 className="font-['Playfair_Display'] font-black text-white leading-none mb-5" style={{ fontSize: 'clamp(44px, 5.5vw, 72px)' }}>
+                Taco<br />Salad
+              </h3>
+              <div className="w-10 h-px bg-[#F5C542]/50 mb-5" />
+              <p className="font-['Poppins'] text-white/50 text-base leading-relaxed max-w-sm">
+                Tazón crujiente frito a mano, cargado con proteína, arroz, frijoles, lechuga fresca, pico de gallo, aguacate y crema. Fresco, generoso e irresistible.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-2">
+                {['Tazón Frito', 'Arroz', 'Frijoles', 'Aguacate', 'Pico de Gallo'].map((t) => (
+                  <span key={t} className="font-['Poppins'] text-white/50 text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/3">{t}</span>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div className="h-16 bg-[#060F0F]" />
+    </section>
+  )
+}
+
 function Navbar({ scrolled }) {
   const [open, setOpen] = useState(false)
 
   const links = [
     { href: '#menu',      label: 'Menú' },
-    { href: '#pizzas',    label: '🍕 $10 Pizza Mondays' },
+    { href: '#nuevos',    label: 'Platos Nuevos' },
+    { href: '#pizzas',    label: '$10 Pizza Mondays' },
     { href: '#catering',  label: 'Catering' },
     { href: '#resenas',   label: 'Reseñas' },
     { href: '#galeria',   label: 'Galería' },
@@ -1143,6 +1304,7 @@ function Footer() {
               </a>
               {[
                 { href: '#menu',      label: 'Menú' },
+                { href: '#nuevos',    label: 'Platos Nuevos' },
                 { href: '#resenas',   label: 'Reseñas' },
                 { href: '#galeria',   label: 'Galería' },
                 { href: '#calidad',   label: 'Calidad' },
@@ -1337,6 +1499,7 @@ function App() {
       <Stats />
       <PhotoStrip />
       <Menu />
+      <NuevosPlatos />
       <PizzaMondays />
       <Quality />
       <Reviews />
