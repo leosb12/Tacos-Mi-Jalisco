@@ -153,11 +153,11 @@ const qualities = [
 ]
 
 const hours = [
-  { day: 'Monday',    time: '10:30 AM – 6:00 PM' },
-  { day: 'Tuesday',   time: '10:30 AM – 6:00 PM' },
-  { day: 'Wednesday', time: '10:30 AM – 6:00 PM' },
-  { day: 'Thursday',  time: '10:30 AM – 6:00 PM' },
-  { day: 'Friday',    time: '10:30 AM – 6:00 PM' },
+  { day: 'Monday',    time: '11:00 AM – 6:00 PM' },
+  { day: 'Tuesday',   time: '11:00 AM – 6:00 PM' },
+  { day: 'Wednesday', time: '11:00 AM – 6:00 PM' },
+  { day: 'Thursday',  time: '11:00 AM – 6:00 PM' },
+  { day: 'Friday',    time: '11:00 AM – 6:00 PM' },
   { day: 'Saturday',  time: '11:00 AM – 3:00 PM' },
   { day: 'Sunday',    time: 'Closed' },
 ]
@@ -180,7 +180,6 @@ const stripPhotos = [
   '/platos/636851891_1251884626920878_8684798062009883049_n.jpg',
   '/platos/637151210_1251884693587538_3798225634366397060_n.jpg',
   '/platos/638541360_1251884630254211_8865505946667913032_n.jpg',
-  '/platos%202/481706382_992139792895364_4246540366116021235_n.jpg',
   '/platos%202/485766901_999754718800538_4577626954209206564_n.jpg',
   '/platos%202/486379358_1002338201875523_4160361520267368231_n.jpg',
   '/nachos.jpg',
@@ -198,18 +197,15 @@ const galleryPhotos = [
   '/platos/Pizza.jpg',
   '/platos/tacos.jpg',
   '/platos/fish%20tacos.jpg',
-  '/platos/burrito.jpg',
   '/platos/3%20platos.jpg',
   '/platos/postre.jpg',
   '/platos/pizza2.jpg',
   '/platos/Tacos%20or%20burritos.jpg',
   '/platos/postre2.jpg',
   '/platos/cinnamon%20rolls.jpg',
-  '/platos/desayuno.jpg',
   '/platos/552910526_1138203494955659_6539149764488120952_n.jpg',
   '/platos/561794658_1156754203100588_3253889954766667126_n.jpg',
   '/platos/591163762_1190394266403248_4965598962446868990_n.jpg',
-  '/platos%202/481706382_992139792895364_4246540366116021235_n.jpg',
   '/platos%202/485766901_999754718800538_4577626954209206564_n.jpg',
   '/platos%202/486379358_1002338201875523_4160361520267368231_n.jpg',
   '/nachos.jpg',
@@ -501,7 +497,7 @@ function Hero() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
           </div>
           <div className="absolute -bottom-5 -left-5 w-44 h-44 rounded-xl overflow-hidden shadow-2xl border border-white/10 rotate-3">
-            <img src="/platos/burrito.jpg" alt="Burrito" className="w-full h-full object-cover" loading="eager" />
+            <img src="/platos/tacos3.jpg" alt="Tacos" className="w-full h-full object-cover" loading="eager" />
           </div>
           <div className="absolute -top-4 -right-4 w-36 h-36 rounded-xl overflow-hidden shadow-2xl border border-white/10 -rotate-2">
             <img src="/platos/Pizza.jpg" alt="Pizza" className="w-full h-full object-cover" loading="eager" />
