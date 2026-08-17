@@ -1,16 +1,60 @@
-# React + Vite
+# Tacos Mi Jalisco
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Tacos Mi Jalisco** is a modern restaurant website developed for a Mexican restaurant located in **Bowling Green, Kentucky**.
 
-Currently, two official plugins are available:
+The website is designed to present the restaurant's brand, menu, featured dishes, catering services, customer reviews, gallery, and location while providing customers with quick access to online ordering.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+The project focuses on creating a strong digital presence for a local restaurant through a responsive and visually engaging interface inspired by the restaurant's Mexican identity.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The homepage combines food photography, clear navigation, promotional content, and direct calls to action to help customers quickly explore the restaurant and place an order.
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Responsive restaurant website
+* Interactive navigation
+* Digital menu presentation
+* Featured and new dishes
+* Promotional sections
+* Online ordering integration
+* Catering information
+* Customer reviews
+* Food and restaurant gallery
+* About section
+* Restaurant location information
+* Mobile-friendly interface
+
+## User Experience
+
+The interface was designed around quick access to the information customers need most.
+
+Visitors can easily:
+
+* Explore the menu
+* Discover new dishes and promotions
+* View food photography
+* Learn about catering services
+* Read customer reviews
+* Find the restaurant location
+* Access online ordering
+
+## Design
+
+The visual identity combines bold typography, high-quality food imagery, and a modern color palette to create an interface that reflects the personality of the restaurant while keeping the experience clear and easy to navigate.
+
+## Technologies
+
+* JavaScript
+* HTML
+* CSS
+* Responsive Web Design
+* Modern Frontend Development
+
+## Purpose
+
+The project was developed to provide **Tacos Mi Jalisco** with a professional digital presence that helps customers discover the restaurant, explore its food, access relevant information, and move directly from browsing to ordering.
+
+---
+
+**Developed by Leonardo Serrate**
